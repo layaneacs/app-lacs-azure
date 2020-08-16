@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{    
+    font-family:'Roboto Slab', serif;
+    background-size: auto 100vh;
+    background: #fff;
+    height: 100vh;    
+}
+
+.principal{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+    position: relative ;
+    z-index: 1;  
+
+    /*padding-right: 18em;     */
+}
+
+.textos{
+    background-color: #fff;  
+
+    color: #263238;
+    
+    padding: 36px 28px;
+    border-radius: 8px; 
+
+    max-width: 350px;
+}
+
+.textos .texto{    
+    margin-bottom: 36px;
+    
+    font-weight: 500;
+}
+
+.textos .sub-texto{
+    margin-bottom: 36px;  
+    font-weight: 100;  
+}
+
+.textos a {
+    background: #fff;
+    border: solid #263238 1px;
+    color: #263238;
+    
+
+    text-decoration: none;
+
+    padding: 8px 22px ;
+
+    border-radius: 8px;      
+}
+
+.textos a:hover {
+    background: #263238;
+    color: #fff;
+}
+
+footer {    
+    background-color: #263238;
+    text-align: end;
+    padding: 2px 12px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0px 2px #fff;
+    width: 100vw;
+    z-index: 1;
+}
+
+body ::after {    
+    content: "";
+    position: absolute;
+    background: #263238;
+    top: 50%;
+    right: 0;
+    left: 0;   
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+}
